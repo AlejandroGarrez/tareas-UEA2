@@ -1,0 +1,16 @@
+void setup(){
+  size(600, 600); // tamaño del lienzo y abajo el color
+  background(255, 0, 34);
+}
+
+void draw(){
+  fill (0, 200, 78); // colorear la elipse 
+  ellipse (40, 40, 40, 40); // circulo en el lienzo
+  fill (15, 45, 90);
+  rectMode(CENTER); // cuadrado en el lienzo
+  rect(200, 200, 100, 100); // sus cordenadas
+  fill (53, 98, 110);
+  textSize(35);
+  text("Salinas mató a Colosio", 80, 110); // texto
+}
+  
