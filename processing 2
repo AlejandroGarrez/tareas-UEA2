@@ -1,0 +1,38 @@
+PImage img;
+ int x;
+ int vx;
+
+void setup(){
+  fullScreen();
+  frameRate(30);
+  img = loadImage("../assets/fotolerma.jpeg");
+  img.resize(650, 500);
+  x= 150;
+  vx = 12;
+}
+
+void draw(){
+  background(128, 0, 128);
+  image(img, 0, 0);
+  fill (0, 0, 255); // colorear la elipse 
+  ellipse (x, 300, 500, 300);
+   x = x + vx;
+   if (x > 1280){
+     vx = -2;
+   }
+   
+   if (x < 150){
+     vx = 2;
+   }
+   
+  fill (255, 135, 0);
+  textSize(30);
+  text("Exposición: Magia. Artista: Alejandro G.GTZ. Del 10 al 29 de Septiembre de 2024", 900, 1000);
+  fill (255, 135, 0);
+  textSize(30);
+  text("Nombre de la Sala: Magiaaa", 1500, 100);
+  fill (255, 135, 0);
+  textSize(30);
+  text("Museo de Heber", 1500, 300);
+}
+  
